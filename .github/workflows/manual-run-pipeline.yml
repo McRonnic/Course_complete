@@ -16,7 +16,7 @@ jobs:
        run: npx playwright install --with-deps
 
      - name: Run UI tests
-       run: npm run tests:ui.spec.js -- --reporter=html
+       run: npm run tests:ui -- --reporter=html
        env:
         PLAYWRIGHT_HTML_REPORT: playwright-report-ui
 
